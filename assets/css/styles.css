@@ -186,6 +186,12 @@ img{
   }
 }
 
+.bold-text{
+  color:#3283f6;
+  font-weight: bold;
+  
+}
+
 .nav__item{
   margin-bottom: var(--mb-2);
 }
