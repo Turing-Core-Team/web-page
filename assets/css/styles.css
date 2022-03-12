@@ -186,6 +186,14 @@ img{
   }
 }
 
+.verde{
+  color:#48e120;
+}
+
+.amarillo{
+  color:#e5be01;
+}
+
 .bold-text{
   color:#3283f6;
   font-weight: bold;
