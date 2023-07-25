@@ -1,223 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!--========== BOX ICONS ==========-->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <!--========== CSS ==========-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="icon" type="image/png" href="assets/img/favicon.png"/>
-        <title>TuringBox - A sandbox for student-led tech projects</title>
-    </head>
-    <body>
-
-        <!--========== SCROLL TOP ==========-->
-        <a href="#" class="scrolltop" id="scroll-top">
-            <i class='bx bx-chevron-up scrolltop__icon'></i>
-        </a>
-
-        <!--========== HEADER ==========-->
-        <header class="l-header" id="header">
-            <nav class="nav bd-container">
-                <a href="index.html" class="nav__logo">
-                    <img src="assets/img/logo.png">
-                </a>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#about" class="nav__link">Nosotros</a></li>
-                        <li class="nav__item"><a href="#projects" class="nav__link">Proyectos</a></li>
-                        <li class="nav__item"><a href="#colab" class="nav__link">Colaboraciones</a></li>
-
-                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--========== HOME ==========-->
-            <section class="home" id="home">
-                <div class="home__container bd-container bd-grid">
-                    <div class="home__data">
-                        <h1 class="home__title">TuringBox</h1>
-                        <h2 class="home__subtitle"> Proyectos de base tecnológica <br> desarrollados por estudiantes🎒  </h2>
-                        <a href="#about" class="button">Ver Más</a>
-                    </div>
-    
-                    <img src="assets/img/1.png" alt="" class="home__img">
-                </div>
-            </section>
-            
-            <!--========== ABOUT ==========-->
-            <section class="about section bd-container" id="about">
-                <div class="about__container  bd-grid">
-                    <div class="about__data">
-                        <span class="section-subtitle about__initial">Nosotros</span>
-                        <h2 class="section-title about__initial"> TuringBox como Sandbox <br>  🧑‍💻👩‍🔬🔬</h2>
-                        <p class="about__description"> Somos un semillero de co-creación de la Universidad Nacional de Colombia, en el cual brindamos apoyo y un espacio para realizar proyectos de base tecnológica </p>
-                        <a href="about.html" class="button">Explora más</a>
-                    </div>
-
-                    <img src="assets/img/2.png" alt="" class="about__img">
-                </div>
-            </section>
-
-            <!--========== PROJECTS ==========-->
-            <section class="services section bd-container" id="projects">
-                <span class="section-subtitle">Proyectos</span>
-
-                    
-                <h2 class="section-title">Únete a un proyecto</h2>
-                
-                    <div class="services__container  bd-grid">
-                        <div class="services__content">
-                            <img src="assets/img/4.png" alt="" class="services__img">
-    
-                            <h3 class="services__title">Regístrate</h3>
-                            <p class="services__description">Registrate como interesado, cuando se abra una vacante o se inicie un proyecto nuevo, te notificaremos
-                            </p>
-                        </div>
-                        <div class="services__content">
-                            <img src="assets/img/3.png" alt="" class="services__img">
-    
-                            <h3 class="services__title">Propón</h3>
-                            <p class="services__description">Propón un proyecto o idea, aquí encontrarás personas dispuestas a ayudarte</p>
-                        </div>
-    
-                        <div class="services__content">
-                            <img src="assets/img/5.png" alt="" class="services__img">
-    
-                            <h3 class="services__title">Únete</h3>
-                            <p class="services__description">Mira la lista de proyectos activos, puedes solicitar unirte o ver las vacantes abiertas</p>
-                        </div>
-                    </div>
-                <br><br>  
-
-    
-                <div class="section-subtitle">
-                    <a href="projects.html" class="button " >Explorar más</a>
-                </div>
-
-            </section>
-
-
-            <section class="services section bd-container" id="projects">
-                <span class="section-subtitle">Proyectos top</span>
-                <br>
-
-                <div class="menu__container bd-grid">
-                    <a href="https://github.com/julianVelandia/Eureka" class="no_link">
-                        <div class="menu__content">
-                            <h3 class="menu__name">Eureka</h3>
-                            <span class="menu__detail">Web scraping de oportunidades estudiantiles para estudiantes</span>
-                            <span class="menu__preci"><span class="amarillo">En pausa</span></span>
-                        </div>
-                    </a>
-                    
-                    <a class="no_link">
-                        <div class="menu__content">
-                            <h3 class="menu__name">Gaia Red</h3>
-                            <span class="menu__detail">Sistema IoT para monitorear cultivos que no cuentan con acceso a internet  </span>
-                            <span class="menu__preci"> <span class="verde">Activo</span></span>
-                        </div>
-                    </a>
-
-                    <a  class="no_link">
-                        <div class="menu__content">
-                            <h3 class="menu__name">Camp Colorá</h3>
-                            <span class="menu__detail">Bootcamp para estudiantes  de escuelas secundarias rurales</span>
-                            <span class="menu__preci"> <span class="verde">Activo</span></span>
-                        </div>
-                    </a>
-
-                    <a class="no_link">
-                        <div class="menu__content">
-                            <h3 class="menu__name">Rooty</h3>
-                            <span class="menu__detail">Aplicación móvil que conecta jardines comunitarios, colaboradores, urbanistas y nuevos usuarios</span>
-                            <span class="menu__preci"> <span class="verde">Activo</span></span>
-                        </div>
-                    </a>
-                </div>
-
-            </section>
-
-
-            <!--========== CONTACT US ==========-->
-            <section class="contact section bd-container" id="colab">
-                <div class="contact__container bd-grid">
-                    <div class="contact__data">
-                        <span class="section-subtitle contact__initial">¿Quieres ayudarnos?</span>
-                        <h2 class="section-title contact__initial">Contáctanos</h2>
-                        <p class="contact__description">Si quieres ser parte del <span class="bold-text"> core team</span>  que construye las herramientas de TuringBox, no dudes en contactarnos</p>
-                    </div>
-
-                    <div class="contact__button">
-                        <a href="colaboraciones.html" class="button">Contáctanos</a>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!--========== FOOTER ==========-->
-        <footer class="footer section bd-container">
-            <div class="footer__container bd-grid">
-                <div class="footer__content">
-                    <a href="#" class="footer__logo">TuringBox</a>
-                    <span class="footer__description">A sandbox <br> for student-led <br> tech projects</span>
-                    <div>
-                        <a href="https://www.linkedin.com/company/turingbox/" target="_blank" class="footer__social"><i class='bx bxl-linkedin'></i></a>
-                        <a href="http://instagram.com/turingbox" target="_blank" class="footer__social"><i class='bx bxl-instagram'></i></a>
-                    </div>
-                </div>
-
-                <div class="footer__content">
-                    <h3 class="footer__title"><a href="about.html" class="footer__link">Nosotros</a></h3>
-                    <ul>
-                        <li><a class="footer__link">¿Qué somos?</a></li>
-                        <li><a class="footer__link">¿Cúal es nuestra <br> metodología?</a></li>
-                        <li><a class="footer__link">¿A dónde vamos?</a></li>
-                        <li><a class="footer__link">Después de Turing</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__content">
-                    <h3 class="footer__title"><a href="projects.html" class="footer__link">Proyectos</a></h3>
-                    <ul>
-                        <li><a class="footer__link">Proponer</a></li>
-                        <li><a class="footer__link">Unirte</a></li>
-                        <li><a class="footer__link">Regístrate</a></li>
-                        <li><a class="footer__link">Lista de proyectos</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__content">
-                    <h3 class="footer__title"><a href="colaboraciones.html" class="footer__link">Colaboraciones</a></h3>
-                    <ul>
-                        <li><a class="footer__link">Ayúdanos a crecer</a></li>
-                        <li><a class="footer__link">Nuestros colaboradores</a></li>
-                        <li><a class="footer__link">CoreTeam</a></li>
-                        
-                    </ul>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuringBox</title>
+    <link rel="shortcut icon" href="TB_Símbolo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="TB_Símbolo Blanco.png" alt="Logo TuringBox" class="header-logo">
+        <img src="menu.png" alt="Menu" class="header-menu">
+    </header>
+    <section id="hero-section">
+        <div class="main-content">
+            <h1>TuringBox</h1>
+            <h2>Un semillero de estudiantes para estudiantes</h2>
+            <div class="mouse-scroll">
+                <div class="mouse-wheel"></div>
             </div>
+        </div>
+        <div class="bg-images">
+            <img src="hero section bg 1.png" alt="bg 1" class="bg-1">
+            <img src="hero section bg 2.png" alt="bg 2" class="bg-2">
+            <img src="hero section bg 3.png" alt="bg 2" class="bg-3 hidden">
+            <img src="hero section bg 4.png" alt="bg 2" class="bg-4 hidden">
+        </div>
+    </section>
 
-            <p class="footer__copy"> 2022 TuringBox. All right reserved <br>
-            De Colombia con ❤ para el mundo</p>
-        </footer>
-
-        <!--========== SCROLL REVEAL ==========-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--========== MAIN JS ==========-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <script src="script.js" type="module"></script>
+</body>
 </html>
-
