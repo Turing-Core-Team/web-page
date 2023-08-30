@@ -18,14 +18,14 @@
     --pink-gradient: linear-gradient(45deg, rgba(255,117,190,1) 0%, rgba(206,21,60,1) 100%);
     --scrollbar-display: block;
     --menu-lines:rgba(255, 255, 255, 0.2);
-    --cursor: url(assets/purple_cursor.png) , default;
-    --pointer: url(assets/purple_pointer.png) , default;
-    --white-cursor: url(assets/white_cursor.png) , default;
-    --white-pointer: url(assets/white_pointer.png) , default;
+    --cursor: default;
+    --pointer: pointer;
+    --white-cursor: default;
+    --white-pointer: pointer;
 }
 
 html{
-    cursor: var(--cursor);
+    cursor: default;
 }
 
 ::-webkit-scrollbar {
@@ -391,13 +391,13 @@ b{
 }
 
 .purple-pointer{
-    cursor: url(assets/purple_pointer.png) , pointer !important;
+    cursor: pointer !important;
 }
 .blue-pointer{
-    cursor: url(assets/blue_pointer.png) , pointer !important;
+    cursor: pointer !important;
 }
 .pink-pointer{
-    cursor: url(assets/pink_pointer.png) , pointer !important;
+    cursor: pointer !important;
 }
 
 .complete-carousel{
@@ -432,7 +432,7 @@ b{
 .left-arrow, .right-arrow{
     width: 2rem;
     height: auto;
-    cursor: var(--pointer);
+    cursor: pointer;
 }
 
 .left-arrow{
@@ -442,7 +442,7 @@ b{
 .carousel-hexagon{
     width: 2rem;
     height: 1.8rem;
-    cursor: var(--pointer);
+    cursor: pointer;
 }
 
 /*Footer*/
