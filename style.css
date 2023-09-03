@@ -991,6 +991,10 @@ footer{
         margin-bottom: 10rem;
         padding: 0 5vw 7.5rem 5vw;
     }
+
+    #projects h2{
+        width: 90vw;
+    }
     
     .project-board{
         flex-direction: row;
