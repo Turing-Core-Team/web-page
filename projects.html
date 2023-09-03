@@ -1,220 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - TuringBox</title>
+    <link rel="shortcut icon" href="assets/TB_Símbolo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <!--========== BOX ICONS ==========-->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <!--========== CSS ==========-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="icon" type="image/png" href="assets/img/favicon.png"/>
-        <title>TuringBox - A sandbox for student-led tech projects</title>
-    </head>
-    <body>
-
-        <!--========== SCROLL TOP ==========-->
-        <a href="#" class="scrolltop" id="scroll-top">
-            <i class='bx bx-chevron-up scrolltop__icon'></i>
-        </a>
-
-        <!--========== HEADER ==========-->
-        <header class="l-header" id="header">
-            <nav class="nav bd-container">
-                <a href="index.html" class="nav__logo">
-                    <img src="assets/img/logo.png">
-                </a>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="about.html" class="nav__link">Nosotros</a></li>
-                        <li class="nav__item"><a href="projects.html" class="nav__link">Proyectos</a></li>
-                        <li class="nav__item"><a href="colaboraciones.html" class="nav__link">Colaboraciones</a></li>
-
-                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--========== HOME ==========-->
-            <section class="home" id="home">
-                <div class="home__container bd-container bd-grid">
-                    <div class="home__data">
-                        <h2 class="home__subtitle"> Proyectos de base tecnológica <br> desarrollados por estudiantes🎒  </h2>
-                    </div>
-    
-                    <img src="assets/img/10.png" alt="" class="home__img">
-                </div>
-            </section>
-            
-            
-
-            <!--========== SERVICES ==========-->
-            <section class="services section bd-container" id="services">
-                <span class="section-subtitle">Proyectos</span>
-                <h2 class="section-title">Únete a un proyecto</h2>
-
-                <div class="services__container  bd-grid">
-                    <div class="services__content">
-                        <img src="assets/img/4.png" alt="" class="services__img">
-    
-                            <h3 class="services__title">Regístrate</h3>
-                            <br>
-                            <p class="services__description">Si solo estás interesado en hacer parte de la comunidad de TuringBox, pero en el momento no hay un proyecto que te motive o no sabes cómo puedes aportar, puedes registrarte como interesado y cuando se propongan nuevos proyectos o se abran vacantes, nosotros te notificaremos y serás de los primeros en enterarte
-
-                            </p>
-                            <br><br>
-
-                        <a href="https://forms.gle/Q4rNegugtAQEpDoF6" class="button">Regístrate</a>
-
-                    </div>
-
-                    <div class="services__content">
-                       <img src="assets/img/3.png" alt="" class="services__img">
-    
-                        <h3 class="services__title">Propón</h3>
-                        <br>
-                        <p class="services__description">Puedes proponer un proyecto en concreto, con una solución o idea bien definida y encontrar personas, recursos y el apoyo necesario para llevarlo a cabo</p>
-                        <br>
-                        <p class="services__description">Si no tienes una solución en concreto, puedes proponer una problemática a resolver, es probable que a alguien se le ocurra una solución</p>
-                        <br>
-                        <br><br>
-                        <a href="https://forms.gle/Q4rNegugtAQEpDoF6" class="button">Propón</a>
-
-                    </div>
-
-                    <div class="services__content">
-                        <img src="assets/img/5.png" alt="" class="services__img">
-    
-                        <h3 class="services__title">Únete</h3>
-                        <br>
-                        <p class="services__description">Si te interesa un proyecto activo y le sientes que le puedes aportar, haz una propuesta para unirte, decisión depende de las necesidades del proyecto
-                        </p>
-                        <br>
-                        <p class="services__description">Si por alguna razón no logras entrar al proyecto, no te desanimes, vas a quedar registrado como interesado y serás de las primeras opciones para futuras vacantes
-
-                        </p>
-                        <br>
-                        <a href="https://forms.gle/Q4rNegugtAQEpDoF6" class="button">Únete</a>
-
-                    </div>
-                </div>
-            </section>
-
-            <!--========== MENU ==========-->
-            <section class="menu section bd-container" id="menu">
-                <span class="section-subtitle">Proyectos</span>
-
-                <div class="menu__container bd-grid">
-                    <a href="https://github.com/julianVelandia/Eureka" class="no_link">
-                        <div class="menu__content">
-                            <h3 class="menu__name">Eureka</h3>
-                            <span class="menu__detail">Eureka es un proyecto Rest-API para Web Scraping y limpieza de datos, basado en FastAPI y siguiendo una arquitectura hexagonal</span>
-                            <span class="menu__preci"><span class="amarillo">En pausa</span></span>
-                        </div>
-                    </a>
-                    
-                    <a class="no_link">
-                        <div class="menu__content">
-                            <h3 class="menu__name">Gaia Red</h3>
-                            <span class="menu__detail">Nuestro proyecto consiste en un sistema IoT para monitorear cultivos que no cuentan con acceso a internet, enviando los datos desde los sensores hasta una estación con acceso a internet por medio de antenas de radio frecuencia
-                            </span>
-                            <span class="menu__preci"> <span class="verde">Activo</span></span>
-                        </div>
-                    </a>
-
-                    <a class="no_link">
-                        <div class="menu__content">
-                            <h3 class="menu__name">Camp Colorá</h3>
-                            <span class="menu__detail">Capacitar a los estudiantes de escuelas secundarias rurales para que sigan una educación superior a través de la tutoría de estudiantes universitarios en un campamento de entrenamiento itinerante en persona de una semana.</span>
-                            <span class="menu__preci"> <span class="verde">Activo</span></span>
-                        </div>
-                    </a>
-
-                    <a class="no_link">
-                        <div class="menu__content">
-                            <h3 class="menu__name">Rooty</h3>
-                            <span class="menu__detail">Rooty es una aplicación móvil nueva y fresca que conecta jardines comunitarios, colaboradores, urbanistas y nuevos usuarios. Rooty ayuda a combatir la inseguridad alimentaria mientras promueve prácticas sostenibles en espacios urbanos.</span>
-                            <span class="menu__preci"> <span class="verde">Activo</span></span>
-                        </div>
-                    </a>
-                    
-                    <a class="no_link">
-                        <div class="menu__content">
-                            <h3 class="menu__name">Conferencias y eventos</h3>
-                            <span class="menu__detail">Eventos híbridos alrededor de las tecnologías creadas por Google, con el apoyo del programa GDSC
-                            </span>
-                            <span class="menu__preci"><span class="amarillo">En pausa</span></span>
-                        </div>
-                    </a>
-
-                    
-                </div>
-            </section>
-
-        </main>
-
-       
-        <!--========== FOOTER ==========-->
-        <footer class="footer section bd-container">
-            <div class="footer__container bd-grid">
-                <div class="footer__content">
-                    <a href="#" class="footer__logo">TuringBox</a>
-                    <span class="footer__description">A sandbox <br> for student-led <br> tech projects</span>
-                    <div>
-                        <a href="https://www.linkedin.com/company/turingbox/" target="_blank" class="footer__social"><i class='bx bxl-linkedin'></i></a>
-                        <a href="http://instagram.com/turingbox" target="_blank" class="footer__social"><i class='bx bxl-instagram'></i></a>
-                    </div>
-                </div>
-
-                <div class="footer__content">
-                    <h3 class="footer__title"><a href="about.html" class="footer__link">Nosotros</a></h3>
-                    <ul>
-                        <li><a class="footer__link">¿Qué somos?</a></li>
-                        <li><a class="footer__link">¿Cúal es nuestra <br> metodología?</a></li>
-                        <li><a class="footer__link">¿A dónde vamos?</a></li>
-                        <li><a class="footer__link">Después de Turing</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__content">
-                    <h3 class="footer__title"><a href="projects.html" class="footer__link">Proyectos</a></h3>
-                    <ul>
-                        <li><a class="footer__link">Proponer</a></li>
-                        <li><a class="footer__link">Unirte</a></li>
-                        <li><a class="footer__link">Regístrate</a></li>
-                        <li><a class="footer__link">Lista de proyectos</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__content">
-                    <h3 class="footer__title"><a href="colaboraciones.html" class="footer__link">Colaboraciones</a></h3>
-                    <ul>
-                        <li><a class="footer__link">Ayúdanos a crecer</a></li>
-                        <li><a class="footer__link">Nuestros colaboradores</a></li>
-                        <li><a class="footer__link">CoreTeam</a></li>
-                        
-                    </ul>
-                </div>
+    <header>
+        <img src="assets/TB_Símbolo Blanco.png" alt="Logo TuringBox" class="header-logo" onclick="location.replace('https://turingbox.co')">
+        <img src="assets/TB_Identificador blanco.png" alt="Logo TuringBox" class="header-logo-desktop" onclick="location.replace('https://turingbox.co')">
+        <img src="assets/menu.png" alt="Menu" class="header-menu">
+        <div class="header-links">
+            <a href="projects.html" style="text-decoration: underline;">Proyectos</a>
+            <a href="colaboraciones.html">Colaboraciones</a>
+            <a href="about.html">Nosotros</a>
+        </div>
+    </header>
+    <div id="menu" class="mobile none">
+        <div class="menu-header">
+            <div class="empty"></div>
+            <img src="assets/close.png" alt="close menu" class="close-menu">
+        </div>
+        <div class="menu-options">
+            <a href="projects.html" class="top-separate">Proyectos</a>
+            <div class="menu-line"></div>
+            <a href="colaboraciones.html">Colaboraciones</a>
+            <div class="menu-line"></div>
+            <a href="about.html">Nosotros</a>
+            <div class="menu-line"></div>
+            <img src="assets/hero section bg 2.png" alt="Hexagonos" class="menu-bg">
+        </div>
+    </div>
+    <section id="hero-section" class="blue-gradient">
+        <div class="main-content">
+            <h2 data-aos="fade-up" data-aos-duration="1000">Conoce nuestros proyectos o propón el tuyo</h2>
+            <div class="mouse-scroll" data-aos="fade-up" data-aos-duration="1000">
+                <div class="mouse-wheel"></div>
             </div>
+        </div>
+        <div class="bg-images" data-aos="fade-up" data-aos-duration="1000">
+            <img src="assets/hero section bg 1.png" alt="bg 1" class="bg-1">
+            <img src="assets/hero section bg 2.png" alt="bg 2" class="bg-2">
+            <img src="assets/hero section bg 3.png" alt="bg 2" class="bg-3 hidden">
+            <img src="assets/hero section bg 4.png" alt="bg 2" class="bg-4 hidden">
+        </div>
+    </section>
 
-            <p class="footer__copy"> 2022 TuringBox. All right reserved <br>
-            De Colombia con ❤ para el mundo</p>
-        </footer>
+    <section id="projects">
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Nuestros proyectos</h2>
+        <div class="project-board">
+            <figure class="project" data-aos="fade-up" data-aos-duration="1000">
+                <img src="assets/projects/bettercampus.png" alt="Imagen del proyecto" class="project-img">
+                <div class="status">
+                    <img src="assets/filled blue hexagon.png" alt="finalizado" class="status-img">
+                    <p class="status-text">Finalizado</p>
+                </div>
+                <h3 class="project-title">BetterCampus</h3>
+                <p class="project-desc">Herramienta para organizar tus horarios de inscripción.</p>
+                <div class="project-bottom">
+                    <div class="members">
+                        <figure class="circle"></figure>
+                        <figure class="circle"></figure>
+                        <figure class="circle"></figure>
+                    </div>
+                    <button class="see-project" data-project="bettercampus" style="background-color: #01A744;">Ver proyecto</button>
+                </div>
+            </figure>
+            <figure class="project" data-aos="fade-up" data-aos-duration="1000">
+                <img src="assets/projects/spun.png" alt="Imagen del proyecto" class="project-img">
+                <div class="status">
+                    <img src="assets/empty blue hexagon.png" alt="en proceso" class="status-img">
+                    <p class="status-text">En proceso</p>
+                </div>
+                <h3 class="project-title">SPUN</h3>
+                <p class="project-desc">Simulador para la prueba de la Universidad Nacional.</p>
+                <div class="project-bottom">
+                    <div class="members">
+                        <figure class="circle"></figure>
+                        <figure class="circle"></figure>
+                        <figure class="circle"></figure>
+                    </div>
+                    <button class="see-project" data-project="spun" style="background-color: #0F7490;">Ver proyecto</button>
+                </div>
+            </figure>
+            <figure class="project" data-aos="fade-up" data-aos-duration="1000">
+                <img src="assets/projects/tapli.png" alt="Imagen del proyecto" class="project-img">
+                <div class="status">
+                    <img src="assets/empty blue hexagon.png" alt="en proceso" class="status-img">
+                    <p class="status-text">En proceso</p>
+                </div>
+                <h3 class="project-title">Tapli</h3>
+                <p class="project-desc">Creación de menús digitales fácil y rápido.</p>
+                <div class="project-bottom">
+                    <div class="members">
+                        <figure class="circle"></figure>
+                        <figure class="circle"></figure>
+                        <figure class="circle"></figure>
+                    </div>
+                    <button class="see-project" data-project="tapli" style="background-color: #322724;">Ver proyecto</button>
+                </div>
+            </figure>
+        </div>
+    </section>
 
-
-        <!--========== SCROLL REVEAL ==========-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--========== MAIN JS ==========-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <footer>
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">¿Quieres proponer un proyecto?</h2>
+        <a href="https://forms.gle/aTsjyo1CLjm6Kbao6" class="footer-cta">Únete ahora</a>
+        <div class="social-networks">
+            
+                <img src="assets/linkedin.png" alt="linkedin" onclick="window.open('https://www.linkedin.com/company/turingbox/')">
+                <img src="assets/youtube.png" alt="youtube" onclick="window.open('https://www.youtube.com/@turingbox')">
+                <img src="assets/instagram.png" alt="Instagram" onclick="window.open('https://www.instagram.com/turingbox/')">
+                <img src="assets/whatsapp.png" alt="whatsapp" onclick="window.open('https://chat.whatsapp.com/D9wyiwh2jz2FDD6NkeopCS')">
+                <img src="assets/tik-tok.png" alt="tik-tok" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">
+                <img src="assets/twitter.png" alt="twitter" onclick="window.open('https://twitter.com/turingbox_')">
+                <p class="uwunt">De Colombia con ❤ para el mundo</p>
+        </div>
+    </footer>
+    
+    <script src="projects.js" type="module"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
 </html>
-
