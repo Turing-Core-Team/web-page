@@ -13,10 +13,12 @@
     --header-color: rgba(0, 0, 0, 0.3);
     --header-color-scroll: rgba(255, 255, 255, 0.7);
     --dark-gray: rgb(80, 80, 80);
+    --light-gray: #D1D1D1;
     --gray: rgba(0, 0, 0, 0.1);
     --main-gradient: linear-gradient(135deg, rgba(1,139,169,1) 0%, rgba(170,51,170,1) 100%);
     --pink-gradient: linear-gradient(45deg, rgba(255,117,190,1) 0%, rgba(206,21,60,1) 100%);
     --blue-gradient: linear-gradient(135deg, rgba(1,139,169,1) 0%, rgba(0,208,218,1) 100%);
+    --purple-gradient: linear-gradient(135deg, rgba(198,13,181,1) 0%, rgba(170,51,170,1) 100%);
     --scrollbar-display: block;
     --menu-lines:rgba(255, 255, 255, 0.2);
     --cursor: default;
@@ -27,6 +29,7 @@
 
 html{
     cursor: default;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -44,7 +47,7 @@ body{
 }
 
 .none{
-    display: none;
+    display: none !important;
 }
 
 h1::selection, h2::selection, p::selection, a::selection, b::selection{
@@ -215,6 +218,9 @@ header img{
 .blue-gradient{
     background: var(--blue-gradient) !important;
 }
+.purple-gradient{
+    background: var(--purple-gradient) !important;
+}
 
 .main-content{
     width: 100vw;
@@ -289,7 +295,7 @@ header img{
 
 /*What we are*/
 
-#what-we-are, #purpose{
+#what-we-are, #purpose, #event{
     width: 100vw;
     display: flex;
     align-items: center;
@@ -297,7 +303,11 @@ header img{
     padding-top: 5rem;
 }
 
-.section-title{
+#event{
+    margin-bottom: 5rem;
+}
+
+.section-title, .newsletter h3{
     color: var(--primary-color);
     text-align: center;
     font-size: 1.75rem;
@@ -472,6 +482,7 @@ footer{
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+    border-radius: 1rem;
 }
 
 .social-networks{
@@ -674,6 +685,130 @@ footer{
     text-align: center;
     padding: .5rem 0;
     cursor: pointer;
+    text-decoration: none;
+}
+
+#info{
+    padding-bottom: 7.5rem;
+    padding-top: 15vh;
+    margin-top: -20vh;
+}
+
+.info-image{
+    width: 100vw;
+    height: 25vh;
+    background-color: rgb(158, 158, 158);
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-image img{
+    height: 50%;
+}
+
+.info-text{
+    width: 80vw;
+    padding: 0 10vw;
+}
+
+#info h3{
+    width: 100vw;
+    padding-top: 5rem;
+    color: var(--tb-blue);
+}
+
+.info-member{
+    width: 85vw;
+    margin-left: 7.5vw;
+    border-radius: 1rem;
+    background-color: var(--tb-blue);
+    padding-bottom: 1.5rem;
+    margin-top: 7.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.member-img{
+    height: 25vw;
+    margin-top: -12.5vw;
+    margin-bottom: 2.5rem;
+}
+
+.social-media img{
+    width: 2.5rem;
+    margin-top: 2.5rem;
+    cursor: pointer;
+    opacity: .75;
+    transition: .2s;
+}
+
+.social-media img:hover{
+    opacity: 1;
+}
+
+.member-name{
+    font-size: 1.75rem;
+    color: var(--secondary-color);
+}
+
+.member-profession{
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    color: var(--light-gray);
+}
+
+/*---------- Events ----------*/
+
+.newsletter{
+    padding: 5rem 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter h3{
+    color: whitesmoke !important;
+    width: 80vw;
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+.newsletter-input{
+    padding: .5rem 1rem;
+    width: calc(70vw - 2rem);
+    font-size: 1.3rem;
+    background-color: transparent;
+    border: whitesmoke solid .2rem;
+    border-radius: .5rem;
+    outline: none;
+    color: whitesmoke;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.newsletter-subscribe{
+    padding: .5rem 1rem;
+    background-color: whitesmoke;
+    color: var(--tb-purple);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    width: 70vw;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.instagram-post{
+    width: 20rem;
+    height: 20rem;
+    background-color: gray;
+    margin-top: 2rem;
 }
 
 /*---------- Responsive ----------*/
@@ -784,7 +919,7 @@ footer{
         padding-top: 7rem;
     }
     
-    .section-title{
+    .section-title, .newsletter h3{
         font-size: 2.75rem;
         padding: 0 0 4rem 0;
         font-weight: 600;
@@ -988,7 +1123,7 @@ footer{
     /*---------- Projects page ----------*/
 
     #projects{
-        margin-bottom: 10rem;
+        margin-bottom: 5rem;
         padding: 0 5vw 7.5rem 5vw;
     }
 
@@ -1021,6 +1156,108 @@ footer{
     
     .see-project{
         font-weight: 600;
+    }
+
+    #info{
+        padding-bottom: 15rem;
+    }
+    
+    .info-image{
+        height: 50vh;
+    }
+    
+    .info-image img{
+        height: 60%;
+    }
+    
+    .info-text{
+        width: 80vw;
+        padding: 2.5rem 10vw 0 10vw;
+        line-height: 200%;
+    }
+    
+    #info h3{
+        width: 100vw;
+        padding: 5rem 0 1.5rem 0;
+    }
+
+    .info-members{
+        width: 70vw;
+        margin-left: 15vw;
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .info-member{
+        width: 20vw;
+        margin-left: 0;
+    }
+    
+    .member-img{
+        height: 6rem;
+        margin-top: -3rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .social-media img{
+        width: 2rem;
+        margin-top: 1.5rem;
+    }
+    
+    .member-name{
+        font-size: 1.5rem;
+    }
+    
+    .member-profession{
+        margin-top: .75rem;
+        font-size: 1.2rem;
+        opacity: .75;
+        color: var(--secondary-color);
+    }
+
+    /*---------- Events ----------*/
+
+    .newsletter{
+        padding: 12rem 0;
+    }
+
+    .second-separator{
+        margin-bottom: 10rem;
+    }
+
+    .newsletter h3{
+        font-size: 2.5rem;
+    }
+
+    .newsletter-input{
+        padding: .5rem 1rem;
+        width: calc(35vw - 2rem);
+        font-size: 1.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .newsletter-input::selection, .newsletter h3::selection{
+        color: var(--tb-purple);
+        background-color: whitesmoke;
+    }
+
+    .newsletter-subscribe{
+        font-size: 1.5rem;
+        max-width: 20vw;
+        transition: .3s;
+    }
+
+    .newsletter-subscribe:hover{
+        max-width: 23vw;
+    }
+
+    .instagram-post{
+        width: 20rem;
+        height: 20rem;
+        background-color: gray;
+        margin-top: 2rem;
     }
 }
 
@@ -1057,7 +1294,7 @@ footer{
 
     /*What we are*/
     
-    .section-title{
+    .section-title, .newsletter h3{
         font-size: 3.5rem;
         padding: 0 0 5rem 0;
     }
